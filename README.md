@@ -1,8 +1,8 @@
 <h1 align="center" style="border-bottom:none;">User Script Template</h1>
 <h3 align="center">Improve your user script development</h3>
 <p align="center">
-  <a href="https://github.com/semantic-release/semantic-release/actions?query=workflow%3ATest+branch%3Amaster">
-    <img alt="Build states" src="https://github.com/semantic-release/semantic-release/workflows/Test/badge.svg">
+  <a href="https://github.com/MrMarble/userscript-template/actions/workflows/release.yml">
+    <img alt="Build states" src="https://github.com/MrMarble/userscript-template/actions/workflows/release.yml/badge.svg">
   </a>
   <a href="#badge">
     <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
