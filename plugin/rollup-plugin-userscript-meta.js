@@ -39,13 +39,18 @@ async function readPackageAsync() {
   const json = JSON.parse(await readFile(filePath, "utf8"))
   const { userscript } = json
   normalize(json)
-  console.log("NORMALIZED", json)
+
+  const repository = `${
+    json.repository.url || json.bugs.url || json.homepage
+  }`.replaceAll(/git\+|\.git/gm, "")
+
+  console.log("REPOSITORY", repository)
   return {
     ...userscript,
     name: json.name,
     author: json.author.name,
     version: json.version,
-    repository: json.repository.url.replaceAll(/git\+|\.git/gm, ""),
+    repository,
   }
 }
 
