@@ -9,6 +9,7 @@
     "url": "https://github.com/MrMarble/userscript-template"
   },
   "homepage": "https://github.com/MrMarble/userscript-template",
+  "description": "User script template",
   "license": "MIT",
   "type": "module",
   "private": "true",
@@ -36,9 +37,10 @@
     "semantic-release": "^17.4.3"
   },
   "userscript": {
-    "match": [
-      "test",
-      "test2"
-    ]
+    "run-at": "context-menu",
+    "include": [
+      "http://www.tampermonkey.net/*"
+    ],
+    "nocompat": "Chrome"
   }
 }
