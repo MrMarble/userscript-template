@@ -20,7 +20,7 @@
         [
             "@semantic-release/exec",
             {
-                "publishCmd": "yarn build:clean"
+                "publishCmd": "yarn version ${nextRelease.version} && yarn build:clean"
             }
         ],
         [
