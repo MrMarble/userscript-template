@@ -38,19 +38,15 @@ async function readPackageAsync() {
   const filePath = resolve(cwd(), "package.json")
   const json = JSON.parse(await readFile(filePath, "utf8"))
   const { userscript } = json
+
   normalize(json)
 
-  const repository = `${
-    json.repository.url || json.bugs.url || json.homepage
-  }`.replaceAll(/git\+|\.git/gm, "")
-
-  console.log("REPOSITORY", repository)
   return {
     ...userscript,
     name: json.name,
     author: json.author.name,
     version: json.version,
-    repository,
+    source: json.repository.url.replace(/git\+|\.git/gm, ""),
   }
 }
 
@@ -63,8 +59,8 @@ export function generateMeta() {
       const meta = getMeta({
         ...defaultMeta,
         ...pkg,
-        updateURL: `${pkg.repository}/releases/latest/download/${pkg.name}.meta.js`,
-        downloadURL: `${pkg.repository}/releases/latest/download/${pkg.name}.script.js`,
+        updateURL: `${pkg.source}/releases/latest/download/${pkg.name}.meta.js`,
+        downloadURL: `${pkg.source}/releases/latest/download/${pkg.name}.script.js`,
       })
 
       for (const [, options] of Object.entries(bundle)) {
