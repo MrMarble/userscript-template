@@ -10,8 +10,8 @@
   <a href="#badge">
     <img alt="license" src="https://img.shields.io/github/license/MrMarble/userscript-template">
   </a>
-  <a href="https://www.npmjs.com/package/semantic-release">
-    <img alt="npm beta version" src="https://img.shields.io/github/package-json/v/MrMarble/userscript-template">
+  <a href="https://github.com/MrMarble/userscript-template/releases/latest">
+    <img alt="latest release" src="https://img.shields.io/github/v/release/MrMarble/userscript-template">
   </a>
 </p>
 
