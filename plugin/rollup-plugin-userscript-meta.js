@@ -35,7 +35,9 @@ const getMeta = (meta) => {
 }
 
 async function readPackageAsync() {
+  console.log("CWD", cwd())
   const filePath = resolve(cwd(), "package.json")
+  console.log("PKG", filePath)
   const json = JSON.parse(await readFile(filePath, "utf8"))
 
   const { userscript } = json
