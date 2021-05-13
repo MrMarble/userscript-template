@@ -37,10 +37,9 @@ const getMeta = (meta) => {
 async function readPackageAsync() {
   const filePath = resolve(cwd(), "package.json")
   const json = JSON.parse(await readFile(filePath, "utf8"))
-  console.log("JSON", json)
   const { userscript } = json
   normalize(json)
-
+  console.log("NORMALIZED", json)
   return {
     ...userscript,
     name: json.name,
