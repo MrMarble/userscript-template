@@ -22,6 +22,7 @@
     "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {
+    "@semantic-release/exec": "^5.0.0",
     "@types/tampermonkey": "^4.0.0",
     "eslint": "^7.26.0",
     "eslint-config-prettier": "^8.3.0",
