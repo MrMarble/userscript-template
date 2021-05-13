@@ -28,7 +28,10 @@
             {
                 "assets": [
                     {
-                        "path": "!dist/*.meta.js",
+                        "path": [
+                            "dist/*.js",
+                            "!dist/*.meta.js"
+                        ],
                         "label": "User Script file"
                     },
                     {
