@@ -21,7 +21,7 @@
     "lint": "eslint .",
     "lint:fix": "yarn lint --fix",
     "postversion": "yarn build:clean",
-    "postpublish": "yarn build:clean"
+    "prepublish": "yarn build:clean"
   },
   "devDependencies": {
     "@semantic-release/exec": "^5.0.0",

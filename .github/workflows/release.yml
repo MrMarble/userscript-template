@@ -17,8 +17,8 @@ jobs:
         with:
           node-version: 14
       - name: Install dependencies
-        run:  yarn install --frozen-lockfile --ignore-engines
+        run:  yarn install --frozen-lockfile
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn run semantic-release
+        run: yarn semantic-release
