@@ -15,18 +15,17 @@
   </a>
 </p>
 
-This template will allow you to improve your user script development, from code analisys to automatic deployment
+This template will allow you to improve your user script development, from code analysis to automatic deployment
 
 ## Highlights
 
 - Enforce semantic versioning specification
 - Improve code style
 - Automatic deployment
-- Compression of code for faster download
-- Separata metadata header for faster update-check
+- Separate metadata header for faster update-check
 
 ## Usage
 
-Click `Use this template` button and start writting your script.
+Click `Use this template` button and start writing your script.
 
 When you commit to master, the CI will generate the corresponding script files for you to install or distribute. `@downloadURL` will always target the latest version so once you post your script on openuserjs.org or greasyfork.org there is no need to change it again.
