@@ -17,12 +17,7 @@
     "plugins": [
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
-        [
-            "@semantic-release/exec",
-            {
-                "publishCmd": "yarn version --new-version ${nextRelease.version} && yarn build:clean"
-            }
-        ],
+        "@semantic-release/npm",
         [
             "@semantic-release/github",
             {

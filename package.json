@@ -19,7 +19,9 @@
     "build": "rollup --config",
     "build:clean": "rimraf dist && yarn build",
     "lint": "eslint .",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "postversion": "yarn build:clean",
+    "postpublish": "yarn build:clean"
   },
   "devDependencies": {
     "@semantic-release/exec": "^5.0.0",
