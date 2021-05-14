@@ -22,7 +22,7 @@
             {
                 "publishCmd": "yarn version --new-version ${nextRelease.version}"
             }
-        ]
+        ],
         [
             "@semantic-release/git",
             {
